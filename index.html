@@ -1,0 +1,129 @@
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="projects.html">Projects</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://github.com/Slyzzep">GitHub</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://www.linkedin.com/in/volodymyr-drobyniak-7702652a4/">LinkedIn</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://mail.google.com/mail/u/wolodja36577@gmail.com">Gmail</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://t.me/Slyzzep">Telegram</a>
+        </div>
+      </div>
+      
+      <div class="right-side">
+        <div class="brand">
+          VOLODYMYR DROBYNIAK
+        </div>
+      </div>
+    </div>
+   
+  
+    <div class="profile-content-wrapper"><h1>  My skills</h1>
+      </div>
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/unity.png" alt="">
+            </div>
+
+            <div class="subtitle">Having experience in creating 2D/3D games, with a basic understanding of Unity’s physics, animations, and UI systems.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/Csharp.png" alt="">
+            </div>
+
+            <div class="subtitle"> C# Programming: Familiar with object-oriented programming (OOP) and the principles of SOLID.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/sdk.png" alt="">
+            </div>
+
+            <div class="subtitle">SDK Integration: Experience working with UnityAds SDK for monetization and ad management in games.</div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/github.png" alt="">
+            </div>
+
+            <div class="subtitle">Familiar with GitHub for managing and collaborating on projects.</div>
+            
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/languages.png" alt="">
+            </div>
+
+            <div class="subtitle">Level B1 English (Intermediate), Native Ukrainian</div>
+          </div>
+        </div>
+
+       
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

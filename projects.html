@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper ">
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="projects.html">Projects</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://github.com/Slyzzep">GitHub</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://www.linkedin.com/in/volodymyr-drobyniak-7702652a4/">LinkedIn</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://mail.google.com/mail/u/wolodja36577@gmail.com">Gmail</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="https://t.me/Slyzzep">Telegram</a>
+        </div>
+      </div>
+      
+      <div class="right-side">
+        <div class="brand">
+          VOLODYMYR DROBYNIAK
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+        <a href="https://github.com/Slyzzep/PUSH-BALL" class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/proj1.jpg)"></div>
+          <div class="text-wrapper">
+            <h1>PUSH BALL</h1>
+          </div>
+           </div>
+         </a>
+         <a href="https://github.com/Zentig/OverHeat" class="portfolio-item-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/proj2.jpg)"></div>
+            <div class="text-wrapper">
+              <h1>OverHeat</h1>
+            </div>
+             </div>
+           </a>
+           
+
+           
+            
+            
+          
+          
+        </div>
+        
+ 
+
+</body>
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+</html>
